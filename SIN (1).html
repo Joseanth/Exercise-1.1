@@ -9,12 +9,14 @@
 </head>
 <body>
     <hi>Sin Validation</hi>
-    <script type="text/javascript" src="SIN.js"></script>
+
+    
    
     <form>
-        <input type="value" id="" value=""/>
+        <form action="action.php">
+        <input type="value" id="sinvalue" value=""/>
         <button onclick="validate">validate</button>
-        <button onclick="clear">clearsin</button>
+        <button onclick="clearsin">clearsin</button>
     </form>
      
 
@@ -110,6 +112,8 @@ function drawHand(ctx, pos, length, width) {
     <p id="message"></p>
     <p id="validate"></p>
 
-         
+    <script type="text/javascript" src="SIN.js"></script>     
+    
     </body>
+
 </html>

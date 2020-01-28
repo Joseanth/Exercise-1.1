@@ -4,9 +4,9 @@ function clearsin() {
 }
 
 // for validate button
-function validate() {
+function validate() {{
     //get value form input box and declare as variable:
-    var sinNumber = document.getElementById("validate").value;
+    var sinNumber = document.getElementById("sinvalue").value;
 
     //add background on alert messega
     var classPrimary =document.getElementById("message");
@@ -24,7 +24,7 @@ function validate() {
     document.getElementById("message").innerHTML ="Enter 9 digit sin!";
     return false;
     }
-
+}
     //remove the digit (last two digit):
     // var sevenNum = sinNum.substring(0, sinNum.length - 2);
     lastDigit = sinNumber.substring(7,7+2);
