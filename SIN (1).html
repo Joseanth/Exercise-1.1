@@ -10,13 +10,11 @@
 <body>
     <hi>Sin Validation</hi>
 
-    
-   
     <form>
         <form action="action.php">
-        <input type="value" id="sinvalue" value=""/>
-        <button onclick="validate">validate</button>
-        <button onclick="clearsin">clearsin</button>
+         <input type="value" id="sinvalue" value=""/>
+         <button onclick="validate">validate</button>
+         <button onclick="clearsin">clearsin</button>
     </form>
      
 
@@ -27,12 +25,13 @@ align-content: top=right;
 </canvas>
 
 <script>
- var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-var radius = canvas.height / 2;
-ctx.translate(radius, radius);
-radius = radius * 0.90
-setInterval(drawClock, 1000);
+
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90
+    setInterval(drawClock, 1000);
 
 function drawClock(){
   drawFace(ctx, radius);
@@ -111,6 +110,7 @@ function drawHand(ctx, pos, length, width) {
     <p id="sinvalue"></p>
     <p id="message"></p>
     <p id="validate"></p>
+    <!--show outpet message-->
 
     <script type="text/javascript" src="SIN.js"></script>     
     
