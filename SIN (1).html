@@ -10,7 +10,12 @@
 <body>
     <hi>Sin Validation</hi>
 
-    <form>
+    <form onsubmit= "return validate()">
+        <div class= "alert">
+            <span class="onclick"
+           onclick="this.parentElement.style=validate";
+        </span>
+        </div>
         <form action="action.php">
          <input type="value" id="sinvalue" value=""/>
          <button onclick="validate">validate</button>
@@ -111,6 +116,9 @@ function drawHand(ctx, pos, length, width) {
     <p id="message"></p>
     <p id="validate"></p>
     <!--show outpet message-->
+    <p class="alert" id="message(01)"></p>
+    <p class="alert" id="message(02)"></p>
+    <p class="alert" id="message(03)"></p>
 
     <script type="text/javascript" src="SIN.js"></script>     
     

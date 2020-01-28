@@ -1,16 +1,16 @@
 // for clear button
 function clearsin() {
-    document.getElementById("sinvalue").value ="";
+    document.getElementById("sinvalue").value;
 }
 
-// for validate button
-function validate() {{
+    // for validate button
+    function validate() {
     //get value form input box and declare as variable:
     var sinNumber = document.getElementById("sinvalue").value;
 
     //add background on alert messega
     var validate = document.getElementById("message");
-    console.log("");
+    console.log("validate+message");
     ('alert');
 
     //check field (if empty)
@@ -25,21 +25,22 @@ function validate() {{
         return false;
         }
 
-        //remove the digit (last two digit):
-        // var sevenNum = sinNum.substring(0, sinNum.length - 2);
+        
+    //remove the digit (last two digit):
+    // var sevenNum = sinNum.substring(0, sinNum.length - 2);
         lastDigit = sinNumber.substring(7,7+2);
 
-        //extract 2nd,4th,6th,8th digit:
+    //extract 2nd,4th,6th,8th digit:
         var eNumbers = (sinNumber.substring(1,1+1)) + (sinNumber.substring(3,3+1)) +
         (sinNumber.substring(5,5+1)) + (sinNumber.substring(7,7+1));
 
-        //extract 1st,3rd,5th,7th digit:
+    //extract 1st,3rd,5th,7th digit:
         var oddNumbers = (sinNumber.substring(0,0+1)) + (sinNumber.substring(2,2+1)) +
         (sinNumber.substring(4,4+1)) + sinNumber.substring(6,6+1);
 
-        var eNumbersum = "";
-        var esum = 0;
-        var sinNumber ="";
+    var eNumbersum = "";
+    var esum = 0;
+    var sinNumber ="";
 
         //double digit and add together:
     for (var a = 0; a <eNumbers.length; a++) {
@@ -78,7 +79,7 @@ function validate() {{
     } else {
         var sinNumber = document.getElementById("sinvalue").value;
         document.getElementById("message").innerHTML = sinNumber + "SIN number valid";
-    }}
+    }
     /** 
      * show results even number
      * document.getElementById("message(01)").innerHTML = "SIN Number:" + eNumbers;
