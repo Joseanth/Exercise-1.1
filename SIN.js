@@ -10,8 +10,7 @@ function clearsin() {
 
     //add background on alert messega
     var validate = document.getElementById("message");
-    console.log("validate+message");
-    ('alert');
+    primary('alert');
 
     //check field (if empty)
      if (sinNumber ==""){
