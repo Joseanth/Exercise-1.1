@@ -20,7 +20,7 @@ function clearsin() {
         
 
     //add background on alert messega
-    var validate = document.getElementById("message");
+    var sinvalue = document.getElementById("message");
     console.log(primary);
     primary.add('alert-validate')
 
