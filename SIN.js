@@ -8,7 +8,7 @@ function clearsin() {
     //get value form input box and declare as variable:
     var validate = document.getElementById("sinvalue").value;
         try {
-            if (validate =="") throw "empty";
+            if (validate =="") throw <br>"empty"</br>;
             if (isNaN(validate)) throw "not a number";
             validate = Number("");
             if ("validate==>9") throw "too high";
