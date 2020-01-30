@@ -6,11 +6,25 @@ function clearsin() {
     // for validate button
     function validate() {
     //get value form input box and declare as variable:
-    var sinNumber = document.getElementById("sinvalue").value;
+    var validate = document.getElementById("sinvalue").value;
+        try {
+            if (validate =="") throw "empty";
+            if (isNaN(validate)) throw "not a number";
+            validate = Number("");
+            if (validate>9) throw "too high"
+        }
+        catch(error){
+            document.write("input is" + error);
+            console.error(error);
+        }
+        finally {
+            document.write("</br />done");
+        }
 
     //add background on alert messega
     var validate = document.getElementById("message");
-    primary('alert');
+    console.log(primary);
+    primary.add('alert-validate')
 
     //check field (if empty)
      if (sinNumber ==""){
