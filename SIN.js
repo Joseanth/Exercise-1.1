@@ -1,11 +1,14 @@
 // for clear button
 function clearsin() {
-    document.getElementById("sinvalue").value;
+    document.getElementById("clearsin").value;
 }
 
-    // for validate button
+// for validate button
     function validate() {
-    //get value form input box and declare as variable:
+        document.getElementById("sinvalue").value;
+
+//get value form input box and declare as variable:
+    
     var x = document.getElementById("sinvalue").value;
         try {
             if (x=="") throw <br>"empty"</br>;
@@ -19,33 +22,33 @@ function clearsin() {
         }
         
 
-    //add background on alert messega
+//add background on alert messega
     var sinvalue = document.getElementById("message");
     console.log(primary);
     primary.add('alert-validate')
 
-    //check field (if empty)
+//check field (if empty)
      if (sinNumber ==""){
         document.getElementById("message").innerHTML = "Enter Sin Number!";
         return false;
         }
 
-     //check if value less than 9
+//check if value less than 9
      if (sinNumber.length<9){
      document.getElementById("message").innerHTML ="Enter 9 digit sin!";
         return false;
         }
 
         
-    //remove the digit (last two digit):
-    // var sevenNum = sinNum.substring(0, sinNum.length - 2);
+//remove the digit (last two digit):
+// var sevenNum = sinNum.substring(0, sinNum.length - 2);
         lastDigit = sinNumber.substring(7,7+2);
 
-    //extract 2nd,4th,6th,8th digit:
+//extract 2nd,4th,6th,8th digit:
         var eNumbers = (sinNumber.substring(1,1+1)) + (sinNumber.substring(3,3+1)) +
         (sinNumber.substring(5,5+1)) + (sinNumber.substring(7,7+1));
 
-    //extract 1st,3rd,5th,7th digit:
+//extract 1st,3rd,5th,7th digit:
         var oddNumbers = (sinNumber.substring(0,0+1)) + (sinNumber.substring(2,2+1)) +
         (sinNumber.substring(4,4+1)) + sinNumber.substring(6,6+1);
 
