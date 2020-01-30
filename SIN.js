@@ -17,9 +17,7 @@ function clearsin() {
             document.write("input is" + error);
             console.error(error);
         }
-        finally {
-            document.write("</br />done");
-        }
+        
 
     //add background on alert messega
     var validate = document.getElementById("message");
