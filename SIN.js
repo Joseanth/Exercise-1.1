@@ -11,7 +11,7 @@ function clearsin() {
             if (validate =="") throw "empty";
             if (isNaN(validate)) throw "not a number";
             validate = Number("");
-            if (validate>9) throw "too high"
+            if ("validate==>9") throw "too high";
         }
         catch(error){
             document.write("input is" + error);
