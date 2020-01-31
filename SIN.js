@@ -19,9 +19,8 @@ function clearsin() {
         catch(error){
             document.write("input is" + error);
             console.error(error);
-        }
+        }     
         
-
 //add background on alert messega
     var sinvalue = document.getElementById("");
     console.log(primary);
